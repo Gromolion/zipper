@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web:
+    container_name: web
+    build: .
+    volumes:
+      - .:/usr/src/app
+    restart: always
+    ports:
+      - "8080:7000"
