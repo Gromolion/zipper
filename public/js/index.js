@@ -11,14 +11,21 @@ Dropzone.options.dropzone = {
         let dropzone = this;
         const btn = document.getElementById('btn-upload');
         const link = document.getElementById('btn-download');
+        const error = document.getElementById('error');
 
         btn.addEventListener('click', () => {
-            btn.animate({
-                text: '3123123'
-            }, 2000)
+            if (!dropzone.files.length) {
+                error.classList.remove('d-none');
+                return false;
+            }
+
             btn.innerHTML = 'Загрузка...';
             dropzone.processQueue()
         })
+
+        dropzone.on('addedfile', () => {
+            error.classList.add('d-none');
+        });
 
         dropzone.on('successmultiple', (file, data) => {
             btn.classList.add('d-none');
