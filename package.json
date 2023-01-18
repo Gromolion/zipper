@@ -1,5 +1,36 @@
 {
   "dependencies": {
-    "node": "^19.4.0"
-  }
+    "adm-zip": "^0.5.10",
+    "archiver": "^5.3.1",
+    "bootstrap": "^5.2.3",
+    "connect-busboy": "^1.0.0",
+    "constants": "^0.0.2",
+    "dropzone": "^6.0.0-beta.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "fs-extra": "^11.1.0",
+    "jquery": "^3.6.3",
+    "node": "^19.4.0",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
+  },
+  "name": "zipper",
+  "description": "Архиватор",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start.dev": "nodemon index.js",
+    "debug": "node --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gromolion/zipper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gromolion/zipper/issues"
+  },
+  "homepage": "https://github.com/Gromolion/zipper#readme"
 }

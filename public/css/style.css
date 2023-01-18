@@ -1,0 +1,29 @@
+body {
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 800px;
+    margin-top: 20vh;
+    border-radius: 15px;
+    background-color: #F9B1E0;
+    padding: 20px 40px;
+}
+
+.dropzone {
+    border-radius: 15px;
+}
+
+.dz-remove {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.btn-block {
+    width: 100%;
+}
